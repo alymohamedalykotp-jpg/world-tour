@@ -1,0 +1,82 @@
+<html>
+
+<head>
+  <title>Home Page</title>
+  <link rel="stylesheet" href="homepagecss.css">
+</head>
+
+<body>
+
+  <h1 class="h">DISCOVER THE BEAUTY OF THE WORLD</h1>
+  <p class="p">Explore breathtaking landscapes, vibrant cultures, and unforgettable experiences that await you around
+    every corner.</p>
+  <p class="p">Our goal is to help visitors discover famous landmarks, cultural heritage, and amazing travel
+    experiences.</P>
+  <P class="p">Through this website, you can learn about popular places, activities, and tips that make traveling easy
+    and enjoyable.</p>
+
+  <div id="dateTime"></div>
+  <div class="d1">
+    <nav class="n">
+      <a href="index.html" class="a">Home</a>
+      <a href="eygpt.html" class="a">Egypt</a>
+      <a href="dubai.html" class="a">Dubai</a>
+      <a href="italy.html" class="a">Italy</a>
+      <a href="France.html" class="a">France</a>
+      <a href="switzerland.html" class="a">switzerland</a>
+      <a href="maldives.html" class="a">maldives</a>
+      <a href="bali.html" class="a">Bali</a>
+      <a href="japan.html" class="a">Japan</a>
+      <a href="about.html" class="a">About</a>
+    </nav>
+  </div>
+
+  <div class="gallery">
+    <a href="egypt.html">
+      <img src="X:\projects\VS PROJECTS\website\itlay&home\egypt.png" alt="Egypt">
+    </a><a href="dubai.html">
+      <img src="X:\projects\VS PROJECTS\website\itlay&home\dubai.png" alt="Dubai">
+    </a><a href="italy.html">
+      <img src="X:\projects\VS PROJECTS\website\itlay&home\italy.png" alt="Italy">
+    </a><a href="paris.html">
+      <img src="X:\projects\VS PROJECTS\website\itlay&home\paris.png" alt="Paris">
+    </a><a href="switzerland.html">
+      <img src="X:\projects\VS PROJECTS\website\itlay&home\switzerland.png" alt="Switzerland">
+    </a><a href="maldives.html">
+      <img src="X:\projects\VS PROJECTS\website\itlay&home\maldives.png" alt="Maldives">
+    </a><a href="bali.html">
+      <img src="X:\projects\VS PROJECTS\website\itlay&home\bali.png" alt="Bali">
+    </a><a href="japn.html">
+      <img src="X:\projects\VS PROJECTS\website\itlay&home\japan.png" alt="Japan">
+    </a>
+  </div>
+
+  <script>
+    function updateDateTime() {
+      const now = new Date();
+
+      const date = now.toLocaleDateString(undefined, {
+        weekday: "long",
+        year: "numeric",
+        month: "long",
+        day: "numeric"
+      });
+
+      const time = now.toLocaleTimeString(undefined, {
+        hour: "2-digit",
+        minute: "2-digit",
+        second: "2-digit"
+      });
+
+      document.getElementById("dateTime").innerHTML =
+        `${date} <br> ${time}`;
+    }
+
+    // count in seconds
+    updateDateTime();
+    setInterval(updateDateTime, 1000);
+  </script>
+
+</body>
+
+</html>

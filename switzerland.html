@@ -1,0 +1,116 @@
+<html>
+
+<head>
+  <title>switzerland</title>
+  <link rel="stylesheet" href="switzerland.css">
+</head>
+
+<body>
+
+  <h1 class="welcomeHeading">Welcome to switzerland</h1>
+
+  <div class="SlidePics"></div>
+
+  <hr class="hr">
+
+  <div class="d1">
+    <nav class="n">
+      <a href="index.html" class="a">Home</a>
+      <a href="eygpt.html" class="a">Egypt</a>
+      <a href="dubai.html" class="a">Dubai</a>
+      <a href="italy.html" class="a">Italy</a>
+      <a href="France.html" class="a">France</a>
+      <a href="switzerland.html" class="a">switzerland</a>
+      <a href="maldives.html" class="a">maldives</a>
+      <a href="bali.html" class="a">Bali</a>
+      <a href="japan.html" class="a">Japan</a>
+      <a href="about.html" class="a">About</a>
+    </nav>
+  </div>
+  
+
+  <div class="box">
+    <div class="text">
+      <h1 class="heading">The Matterhorn (Zermatt)</h1>
+      <br>
+      The Matterhorn (Zermatt): Perhaps the most photographed mountain in the world, its distinctive pyramid shape is the unofficial symbol of Switzerland. For the best view, take the Gornergrat Railway to the summit.
+      <br><br>
+      <h3>Key Facts</h3>
+      <ul>
+        <li>The "Myth of the Matterhorn": Long considered "unclimbable" due to its sheer walls and local legends of spirits, it was the last of the great Alpine peaks to be conquered.</li>
+        <li>First Ascent (1865): It was first reached on July 14, 1865, by a British party led by Edward Whymper. However, the achievement was marked by tragedy when four climbers fell to their deaths during the descent.</li>
+        <li>Distinctive Shape: It has four steep faces that meet at the summit, each oriented toward a cardinal point (North, South, East, and West).</li>
+      </ul>
+    </div>
+    <div class="image" style="background-image: url('swithz&mald/mount.jpg')" alt="Image"></div>
+  </div>
+
+  <div class="box">
+    <div class="text">
+      <h1 class="heading">Grossmünster (Zurich)</h1>
+      <br>
+      Grossmünster (Zurich): A Romanesque-style Protestant church with twin towers that dominate the Zurich skyline. It played a central role in the Swiss Reformation.
+      <br><br>
+      <h3>Key Facts</h3>
+      <ul>
+        <li>The Twin Towers: These are the church's most famous feature. While the main structure is Romanesque (built between 1100 and 1220), the distinctive neo-Gothic "pepper-pot" domes were added in the late 18th century after a fire destroyed the original wooden steeples.</li>
+        <li>The Legend of Charlemagne: Local lore says that Emperor Charlemagne discovered the graves of the city’s patron saints, Felix and Regula, while hunting. His horse allegedly fell to its knees over their burial site, prompting him to commission the original church. A 15th-century statue of Charlemagne sits in the southern tower, and the original is kept in the crypt.</li>
+        <li>The Swiss Reformation: In the 1520s, Huldrych Zwingli began the Swiss-German Reformation from his pulpit here. This led to a radical transformation of the city’s religious life; the church's interior was stripped of its ornate Catholic decorations, resulting in the minimalist, solemn aesthetic you see today.</li>
+      </ul>
+    </div>
+    <div class="image active" style="background-image: url('swithz&mald/Zurich.webp');"></div>
+  </div>
+
+  <div class="box">
+    <div class="text">
+      <h1 class="heading">Zytglogge (Bern)</h1>
+      <br>
+        Zytglogge (Bern): A medieval clock tower in the heart of Bern’s Old Town. Every hour, a mechanical puppet show performs for the crowds gathered below.
+      <br><br>
+      <h3>Key Facts</h3>
+      <ul>
+        <li>The tower's most famous feature is the astronomical clock (the Astrolabe), installed in 1530 by master clockmaker Kaspar Brunner. It is a marvel of Renaissance engineering that still functions with its original mechanism.</li>
+        <li>The Mechanism: The clock is powered by a system of heavy stones suspended by ropes. Every day, a team of "clock-winders" must manually crank the weights back up—a task that has been performed almost daily for nearly 500 years.</li>
+        <li>What it displays: Beyond the time, it shows the day of the week, the month, the current zodiac sign, the phases of the moon, and the time of sunrise and sunset.</li>
+      </ul>
+    </div>
+    <div class="image" style="background-image: url('swithz&mald/zytglogge.jpg');"></div>
+  </div>
+
+  <div class="box">
+    <div class="text">
+      <h1 class="heading">Jungfraujoch</h1>
+      <br>
+       Jungfraujoch – "Top of Europe": A UNESCO World Heritage site, this is the highest railway station in Europe. It offers a high-altitude wonderland of ice palaces and views of the Aletsch Glacier (the largest glacier in the Alps).
+      <br><br>
+      <h3>Key Facts</h3>
+      <ul>
+        <li>Sphinx Observatory: An ultra-fast elevator whisks you 108 meters further up to this international research station. From the 3,571m terrace, you get a 360-degree view that extends as far as the Black Forest in Germany and the Vosges in France.</li>
+        <li>The Ice Palace: A literal palace carved directly into the glacier. You walk through blue-tinted tunnels of "eternal ice" to see intricate ice sculptures of bears, eagles, and even a piano.</li>
+        <li>Plateau: This outdoor viewing area allows you to step directly onto the snow, even in the height of summer, for a perfect photo op with the Swiss flag against the Jungfrau peak.</li>
+      </ul>
+    </div>
+    <div class="image" style="background-image: url('swithz&mald/jungfraujoch.jpg');"></div>
+  </div>
+
+  <button class="topbtn">TOP</button>
+  <script>
+    document.addEventListener("DOMContentLoaded",function(){
+      const topbtn=document.querySelector(".topbtn");
+    window.addEventListener("scroll",function(){
+      if(window.scrollY>200){
+        topbtn.style.display="block";
+      }else {
+        topbtn.style.display="none";
+      }
+    });
+  topbtn.addEventListener("click",function(){
+    window.scrollTo({top:0,behavior:"smooth"});
+  })  ;
+  });
+    
+
+  </script>
+
+</body>
+</html>
